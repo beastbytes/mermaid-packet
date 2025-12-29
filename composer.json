@@ -1,0 +1,46 @@
+{
+    "name": "beastbytes/mermaid-packet",
+    "type": "library",
+    "description": "PHP for Mermaid.js packet diagram",
+    "keywords": [
+        "mermaid",
+        "packet diagram"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Chris Yates",
+        "email": "chris.l.yates@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.3",
+        "beastbytes/mermaid": "dev-master"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0",
+        "roave/security-advisories": "dev-latest",
+        "vimeo/psalm": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BeastBytes\\Mermaid\\Packet\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BeastBytes\\Mermaid\\Packet\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "./vendor/bin/pest --init",
+        "psalm": "psalm",
+        "test": "pest"
+    }
+}
