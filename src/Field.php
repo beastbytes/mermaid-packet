@@ -29,7 +29,7 @@ final class Field
     public function end(int $end): self
     {
         if ($this->start === null) {
-            throw new RuntimeException('end() must be called after start()');
+            throw new RuntimeException('end() can only be called after start()');
         }
         if ($end < $this->start) {
             throw new RuntimeException('end must be >= start');
