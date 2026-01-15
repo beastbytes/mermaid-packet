@@ -10,10 +10,9 @@ Field Class
     Creates a new Field
 
     :param string $description: The field description
-    :returns: A Field Mermaid instance
+    :returns: A Field instance
     :rtype: Field
 
-  .. _start:
   .. php:method:: start(int $start)
 
     Set the start bit (zero indexed) of the field
@@ -25,12 +24,11 @@ Field Class
     :returns: A new instance of ``Field`` with the start bit
     :rtype: Field
 
-  .. _end:
   .. php:method:: end(int $end)
 
     Set the end bit (zero indexed) of the field
 
-    This method can only be called after :ref:`start() <_start>`
+    This method can only be called after :php:meth:`Field::start`
 
     :param int $end: The end bit
     :returns: A new instance of ``Field`` with the end bit
@@ -40,7 +38,7 @@ Field Class
 
     Set the bit length of the field
 
-    This method cannot be called if :ref:`end() <_end>`
+    This method cannot be called if :php:meth:`Field::end`
 
     :param int $length: The bit
     :returns: A new instance of ``Field`` with the bit length

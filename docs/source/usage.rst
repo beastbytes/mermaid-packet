@@ -15,8 +15,7 @@ A field can be specified by:
 All fields must have a description.
 
 .. note::
-
-Fields **must** be added to the packet in the correct order
+    Fields **must** be added to the packet in the correct order
 
 Example
 -------
