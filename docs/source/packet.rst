@@ -7,10 +7,10 @@ Packet Class
 
   .. php:method:: render(array $attributes)
 
-    Renders the Packet Mermaid code
+    Render the Mermaid code enclosed in a <pre> tag
 
     :param array $attributes: HTML attributes for the enclosing <pre> tag
-    :returns: The Packet Mermaid code
+    :returns: Mermaid code enclosed in a <pre> tag
     :rtype: string
 
   .. php:method:: addField(Field ...$field)

@@ -1,5 +1,5 @@
 Field Class
-=============
+============
 
 .. php:class:: Field
 

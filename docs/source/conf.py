@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Mermaid Mindmap'
+project = 'Mermaid Packet'
 copyright = '2025, BeastBytes'
 author = 'BeastBytes'
 
@@ -26,3 +26,5 @@ exclude_patterns = []
 #html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_css_files = ['css/theme.css']
+html_js_files = ['js/theme.js']
