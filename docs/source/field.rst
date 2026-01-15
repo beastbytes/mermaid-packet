@@ -38,7 +38,7 @@ Field Class
 
     Set the bit length of the field
 
-    This method cannot be called if :php:meth:`Field::end`
+    This method cannot be called if :php:meth:`Field::end` has been called
 
     :param int $length: The bit
     :returns: A new instance of ``Field`` with the bit length
