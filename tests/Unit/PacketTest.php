@@ -39,23 +39,23 @@ test('Packet', function () {
 title: TCP Packet
 ---
 packet
-+16: &quot;Source Port&quot;
-+16: &quot;Destination Port&quot;
-+32: &quot;Sequence Number&quot;
-+32: &quot;Acknowledgment Number&quot;
-96-99: &quot;Data Offset&quot;
-100-105: &quot;Reserved&quot;
-106: &quot;URG&quot;
-107: &quot;ACK&quot;
-108: &quot;PSH&quot;
-109: &quot;RST&quot;
-110: &quot;SYN&quot;
-111: &quot;FIN&quot;
-112-127: &quot;Window&quot;
-128-143: &quot;Checksum&quot;
-144-159: &quot;Urgent Pointer&quot;
-160-191: &quot;(Options and Padding)&quot;
-192-255: &quot;Data (variable length)&quot;
++16: "Source Port"
++16: "Destination Port"
++32: "Sequence Number"
++32: "Acknowledgment Number"
+96-99: "Data Offset"
+100-105: "Reserved"
+106: "URG"
+107: "ACK"
+108: "PSH"
+109: "RST"
+110: "SYN"
+111: "FIN"
+112-127: "Window"
+128-143: "Checksum"
+144-159: "Urgent Pointer"
+160-191: "(Options and Padding)"
+192-255: "Data (variable length)"
 </pre>
 EXPECTED)
     ;
