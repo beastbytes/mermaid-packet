@@ -22,6 +22,9 @@ Example
 
 A TCP packet
 
+PHP
++++
+
 .. code-block:: php
 
     // The packet fields
@@ -46,8 +49,64 @@ A TCP packet
 
     // Create the packet
 
-    Mermaid::create(Packet::class)
+    echo Mermaid::create(Packet::class)
         ->withTitle('TCP Packet')
         ->withFields(...$fields)
         ->render()
     ;
+
+Generated Mermaid
++++++++++++++++++
+
+::
+
+    <pre class="mermaid>
+    ---
+    title: TCP Packet
+    ---
+    packet
+    +16: "Source Port"
+    +16: "Destination Port"
+    +32: "Sequence Number"
+    +32: "Acknowledgment Number"
+    96-99: "Data Offset"
+    100-105: "Reserved"
+    106: "URG"
+    107: "ACK"
+    108: "PSH"
+    109: "RST"
+    110: "SYN"
+    111: "FIN"
+    112-127: "Window"
+    128-143: "Checksum"
+    144-159: "Urgent Pointer"
+    160-191: "(Options and Padding)"
+    192-255: "Data (variable length)"
+    </pre>
+
+Mermaid Diagram
++++++++++++++++
+
+.. mermaid::
+
+    ---
+    title: TCP Packet
+    ---
+    packet
+    +16: "Source Port"
+    +16: "Destination Port"
+    +32: "Sequence Number"
+    +32: "Acknowledgment Number"
+    96-99: "Data Offset"
+    100-105: "Reserved"
+    106: "URG"
+    107: "ACK"
+    108: "PSH"
+    109: "RST"
+    110: "SYN"
+    111: "FIN"
+    112-127: "Window"
+    128-143: "Checksum"
+    144-159: "Urgent Pointer"
+    160-191: "(Options and Padding)"
+    192-255: "Data (variable length)"

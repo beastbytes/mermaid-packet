@@ -4,7 +4,7 @@
 Mermaid Packet
 ==============
 
-Mermaid Packet allows creation of `Mermaid Packet diagrams <https://mermaid.js.org/syntax/packet.html>`__ in PHP.
+Mermaid Packet allows creation of `Mermaid JS Packet diagrams <https://mermaid.js.org/syntax/packet.html>`__ in PHP.
 
 .. toctree::
    :maxdepth: 2
@@ -16,4 +16,9 @@ Mermaid Packet allows creation of `Mermaid Packet diagrams <https://mermaid.js.o
 
 .. seealso::
 
-  `Mermaid documentation <https://beastbytes.github.io/mermaid>`__
+   `Mermaid documentation <https://beastbytes.github.io/mermaid>`__
+  
+   `Mermaid JS <https://mermaid.js.org>`__
+  
+   `Mermaid JS Packet diagrams <https://mermaid.js.org/syntax/packet.html>`__
+   
