@@ -3,36 +3,47 @@ Packet Class
 
 .. php:class:: Packet
 
-  Represents a Packet diagram
+    Represents a Packet diagram
 
-  .. php:method:: render(array $attributes)
+    .. php:method:: render(array $attributes)
 
-    Render the Mermaid code enclosed in a <pre> tag
+        Render the Mermaid code enclosed in a <pre> tag
 
-    :param array $attributes: HTML attributes for the enclosing <pre> tag
-    :returns: Mermaid code enclosed in a <pre> tag
-    :rtype: string
+        :param array $attributes: HTML attributes for the enclosing <pre> tag
+        :returns: Mermaid code enclosed in a <pre> tag
+       :rtype: string
 
-  .. php:method:: addField(Field ...$field)
+    .. php:method:: addField(Field ...$field)
 
-    Add packet field(s)
+        Add packet field(s)
 
-    :param Field ...$field: The packet field(s)
-    :returns: A new instance of ``Packet`` with the fields added to existing fields
-    :rtype: Packet
+        :param Field ...$field: The packet field(s)
+        :returns: A new instance of ``Packet`` with the fields added to existing fields
+        :rtype: Packet
 
-  .. php:method:: withField(Field ...$field)
+    .. php:method:: render(array $attributes = [])
 
-    Set packet field(s)
+        Renders the diagram
 
-    :param Field ...$field: The packet field(s)
-    :returns: A new instance of ``Packet`` with the fields
-    :rtype: Packet
+        :param array $attributes: HTML attributes for the <pre> tag as name=>value pairs
 
-  .. php:method:: withTitle(string $title)
+            .. note:: The *mermaid* class is added
 
-    Set the diagram title
+        :returns: Mermaid diagram code in a <pre> tag
+        :rtype: string
 
-    :param string $title: The title
-    :returns: A new instance of ``Packet`` with the title
-    :rtype: Packet
+    .. php:method:: withField(Field ...$field)
+
+        Set packet field(s)
+
+        :param Field ...$field: The packet field(s)
+        :returns: A new instance of ``Packet`` with the fields
+        :rtype: Packet
+
+    .. php:method:: withTitle(string $title)
+
+        Set the diagram title
+
+      :param string $title: The title
+      :returns: A new instance of ``Packet`` with the title
+      :rtype: Packet
